@@ -49,7 +49,7 @@ with st.sidebar:
                             'images': [uploaded_file.getvalue()]
                         }]
                     )
-                    st.session_state['ocr_result'] = response.message.content
+                    st.session_state['ocr_result'] = response['message']['content']
                 except Exception as e:
                     st.error(f"Error processing image: {str(e)}")
 
