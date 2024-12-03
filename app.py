@@ -39,7 +39,7 @@ with st.sidebar:
             with st.spinner("Processing image..."):
                 try:
                     response = ollama.chat(
-                        model='llama3.2-vision',
+                        model='llama3.2-vision:11b',
                         messages=[{
                             'role': 'user',
                             'content': """Analyze the text in the provided image. Extract all readable content
