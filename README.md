@@ -44,4 +44,15 @@ git clone https://github.com/HoucineDev/llama-ocr
 streamlit run app.py
 ```
 
-After running the command, Streamlit will launch a local server and provide a URL, typically something like http://localhost:8501/. You can open this in your browser to view the app.
+After running the command, Streamlit will launch a local server and provide a URL, typically something like: 
+
+ - **http://localhost:8501/.** 
+
+You can open this in your browser to view the app.
+
+
+If you're running on a remote server, you may need to use the --server.port option to specify a port, like this:
+
+```bash
+streamlit run app.py --server.port 8080
+```
